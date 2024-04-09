@@ -1,0 +1,24 @@
+.dualring {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+}
+.dualring:after {
+  content: " ";
+  display: block;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border-radius: 50%;
+  border: 6px solid #121212;
+  border-color: #121212 transparent #121212 transparent;
+  animation: dualring 1.2s linear infinite;
+}
+@keyframes dualring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
